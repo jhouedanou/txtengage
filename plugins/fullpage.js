@@ -1,5 +1,5 @@
 import { defineNuxtPlugin } from '#app'
-import 'fullpage.js/dist/fullpage.css'
+import 'fullpage.js/dist/fullpage.min.css'
 
 export default defineNuxtPlugin(async (nuxtApp) => {
   if (process.client) {
