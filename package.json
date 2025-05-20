@@ -1,0 +1,47 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "dev:sourcemap": "cross-env NUXT_PUBLIC_SOURCEMAP=true nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "sass-lint": "npx sass --verbose assets/scss/style.scss",
+    "update-browserslist": "npx update-browserslist-db@latest",
+    "sass-fix": "node scripts/fix-sass-deprecations.js",
+    "sass-watch": "npx sass --watch --source-map assets/scss:assets/scss",
+    "sass-optimize": "node scripts/optimize-sourcemaps.js"
+  },
+  "dependencies": {
+    "@nuxt/image": "1.8.1",
+    "@pinia/nuxt": "^0.7.0",
+    "@popperjs/core": "^2.11.8",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
+    "fullpage.js": "^3.1.2",
+    "gsap": "^3.13.0",
+    "locomotive-scroll": "^4.1.4",
+    "nuxt": "^3.14.1592",
+    "pinia": "^2.2.7",
+    "scrollmagic": "^2.0.8",
+    "scrollmagic-plugin-gsap": "^1.0.4",
+    "swiper": "^11.1.15",
+    "vue": "latest",
+    "vue-fullpage.js": "^0.2.15",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "browser-sync": "^3.0.3",
+    "cross-env": "^7.0.3",
+    "sass": "^1.77.8",
+    "sass-embedded": "^1.81.0",
+    "sass-loader": "^16.0.3",
+    "swiper": "^11.1.15",
+    "vue-owl-carousel": "^2.0.3"
+  }
+}
